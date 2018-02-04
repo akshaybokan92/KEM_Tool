@@ -9,6 +9,8 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.kem.utility.ExcelDataConfig;
+
 public class Kemlogin {
 	
 	WebDriver driver;
@@ -42,12 +44,17 @@ public class Kemlogin {
 	
 	public Object[][] passData()
 	{
-		Object[][] data = new Object[6][2];
+		ExcelDataConfig config = new ExcelDataConfig();
+		int rows = config.getRowCount(0);
+		Object [][] data = new Object [rows][2];
 		
-		data[0][0]="kem.modeler@gmail.com";
-		data[0][1]="Password!123";
+		for (int i=0; i<=rows; i++) {
+			
+			data[i][0]= config.getData(0, i, 0);
+			data[i][1]= config.getData(0, i, 1);
+			
+		}
 		return data;
-		
 	}
 
 }
