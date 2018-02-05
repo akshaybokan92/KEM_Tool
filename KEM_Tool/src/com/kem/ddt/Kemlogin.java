@@ -44,7 +44,7 @@ public class Kemlogin {
 	
 	public Object[][] passData()
 	{
-		ExcelDataConfig config = new ExcelDataConfig();
+		ExcelDataConfig config = new ExcelDataConfig("C:\\Users\\Akshay.Bokan\\git\\KEM_Tool\\KEM_Tool\\testdata\\Users.xlsx");
 		int rows = config.getRowCount(0);
 		Object [][] data = new Object [rows][2];
 		

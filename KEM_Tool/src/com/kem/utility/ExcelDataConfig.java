@@ -13,30 +13,23 @@ public class ExcelDataConfig {
 	XSSFSheet sheet1;
 	
 	
-	public ExcelDataConfig()  {
+	public ExcelDataConfig(String excelPath)  {
 		
 		try {
-			File scr = new File("");
+			File scr = new File(excelPath);
 			FileInputStream fis = new FileInputStream(scr);
 			XSSFWorkbook wb = new XSSFWorkbook(fis);
-			XSSFSheet sheet1 =   wb.getSheetAt(0);
+			
 		}  catch (Exception e) {
 			
 			System.out.println(e.getMessage());
 		}
 		
-	
-		
-		
-		
-		
-		
-		
-		
-		
+			
 	}
 	public String getData(int sheetNumber,int row, int column) {
 		
+		XSSFSheet sheet1 = wb.getSheetAt(sheetNumber);
 		String data= sheet1.getRow(row).getCell(column).getStringCellValue();
 		return data;
 		
@@ -47,9 +40,11 @@ public class ExcelDataConfig {
 	
 	public int getRowCount(int sheetIndex)
 	{
-		wb.getSheetAt(sheetIndex).getLastRowNum();
+		int row=wb.getSheetAt(sheetIndex).getLastRowNum();
 		row=row+1;
 		return row;
 		
 	}
+
+	
 }

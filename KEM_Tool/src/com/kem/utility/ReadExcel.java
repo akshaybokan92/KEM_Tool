@@ -11,9 +11,9 @@ public class ReadExcel {
 	
 	public static void main(String[] args) {
 		
-		ExcelDataConfig excel = new ExcelDataConfig();
+		ExcelDataConfig excel = new ExcelDataConfig("C:\\Users\\Akshay.Bokan\\git\\KEM_Tool\\KEM_Tool\\testdata\\Users.xlsx");
 		
-		
+		System.out.println(excel.getData(0, 0, 0));
 	}
 	
 
