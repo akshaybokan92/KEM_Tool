@@ -18,7 +18,7 @@ public class ExcelDataConfig {
 		try {
 			File scr = new File(excelPath);
 			FileInputStream fis = new FileInputStream(scr);
-			XSSFWorkbook wb = new XSSFWorkbook(fis);
+			wb = new XSSFWorkbook(fis);
 
 		}  catch (Exception e) {
 
@@ -42,9 +42,9 @@ public class ExcelDataConfig {
 	{
 		int row=wb.getSheetAt(sheetIndex).getLastRowNum();
 		row=row+1;
+		
 		return row;
-
 	}
 
-
+	
 }

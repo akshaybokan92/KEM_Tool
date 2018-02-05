@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="BSL-BNG-L103" failures="0" tests="1" name="com.kem.ddt.Kemlogin" time="0.762" errors="0" timestamp="5 Feb 2018 09:38:50 GMT">
+  <testcase classname="com.kem.ddt.Kemlogin" name="launchbrowser" time="0.748">
+    <skipped/>
+  </testcase>
+</testsuite>
