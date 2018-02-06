@@ -16,8 +16,8 @@ public class ExcelDataConfig {
 	public ExcelDataConfig(String excelPath)  {
 
 		try {
-			File scr = new File(excelPath);
-			FileInputStream fis = new FileInputStream(scr);
+//			File scr = new File(excelPath);
+			FileInputStream fis = new FileInputStream(excelPath);
 			wb = new XSSFWorkbook(fis);
 
 		}  catch (Exception e) {
@@ -29,7 +29,7 @@ public class ExcelDataConfig {
 	}
 	public String getData(int sheetNumber,int row, int column) {
 
-		XSSFSheet sheet1 = wb.getSheetAt(sheetNumber);
+		sheet1 = wb.getSheetAt(sheetNumber);
 		String data= sheet1.getRow(row).getCell(column).getStringCellValue();
 		return data;
 
