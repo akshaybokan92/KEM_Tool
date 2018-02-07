@@ -25,17 +25,16 @@ public class Kemlogin {
 		
 		//launch browser
 		driver = new ChromeDriver();
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		driver.get("http://35.164.157.128/");
-		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(40,TimeUnit.SECONDS);
 		
 		//test case steps
 		driver.findElement(By.id("username")).sendKeys(username);
+		driver.findElement(By.id("password")).click();
 		driver.findElement(By.id("password")).sendKeys(password);
 		driver.findElement(By.id("login-btn")).click();
-
-		Thread.sleep(3000);
 		// verification point
 		Assert.assertTrue(driver.getTitle().contains("KEM"), "login failed");
 		System.out.println("Login successful");
