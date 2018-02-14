@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="6" passed="2" failed="4" skipped="0">
+<testng-results total="7" passed="0" failed="1" skipped="6">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-02-07T15:42:05Z" name="Default suite" finished-at="2018-02-07T15:43:29Z" duration-ms="84288">
+  <suite started-at="2018-02-13T12:27:52Z" name="Default suite" finished-at="2018-02-13T12:28:17Z" duration-ms="24488">
     <groups>
     </groups>
-    <test started-at="2018-02-07T15:42:05Z" name="Default test" finished-at="2018-02-07T15:43:29Z" duration-ms="84288">
+    <test started-at="2018-02-13T12:27:52Z" name="Default test" finished-at="2018-02-13T12:28:17Z" duration-ms="24488">
       <class name="com.kem.ddt.Kemlogin">
-        <test-method signature="launchbrowser(java.lang.String, java.lang.String)" started-at="2018-02-07T15:42:06Z" name="launchbrowser" finished-at="2018-02-07T15:42:22Z" duration-ms="16075" status="PASS">
+        <test-method signature="launchBrowser(java.lang.String, java.lang.String)" started-at="2018-02-13T12:27:53Z" name="launchBrowser" finished-at="2018-02-13T12:28:17Z" duration-ms="23642" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -20,58 +20,35 @@
               </value>
             </param>
           </params>
-        </test-method>
-        <test-method is-config="true" signature="tearDown()" started-at="2018-02-07T15:42:22Z" name="tearDown" finished-at="2018-02-07T15:42:22Z" duration-ms="695" status="PASS">
-        </test-method>
-        <test-method signature="launchbrowser(java.lang.String, java.lang.String)" started-at="2018-02-07T15:42:22Z" name="launchbrowser" finished-at="2018-02-07T15:42:35Z" duration-ms="12331" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[kaiser.modeler@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Password!123]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[timeout
-  (Session info: chrome=64.0.3282.140)
-  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[Failed to decode response from marionette
 Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T19:05:14.666Z'
-System info: host: 'BSL-BNG-L103', ip: '192.168.10.42', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\AKSHAY~1.BOK\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
-Session ID: 2a3744e0ca44c7c9a2dfd295df5ede6c]]>
+System info: host: 'BSL-BNG-L103', ip: '192.168.10.56', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9480, moz:profile: C:\Users\Akshay.Bokan\AppDa..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: d01d3c27-95b6-46dc-b6b0-83a801d59ecc]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout
-  (Session info: chrome=64.0.3282.140)
-  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T19:05:14.666Z'
-System info: host: 'BSL-BNG-L103', ip: '192.168.10.42', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\AKSHAY~1.BOK\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
-Session ID: 2a3744e0ca44c7c9a2dfd295df5ede6c
+System info: host: 'BSL-BNG-L103', ip: '192.168.10.56', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9480, moz:profile: C:\Users\Akshay.Bokan\AppDa..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: d01d3c27-95b6-46dc-b6b0-83a801d59ecc
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at com.kem.ddt.Kemlogin.launchbrowser(Kemlogin.java:29)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:329)
+	at com.kem.ddt.Kemlogin.launchBrowser(Kemlogin.java:50)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -101,9 +78,70 @@ Session ID: 2a3744e0ca44c7c9a2dfd295df5ede6c
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method is-config="true" signature="tearDown()" started-at="2018-02-07T15:42:35Z" name="tearDown" finished-at="2018-02-07T15:42:35Z" duration-ms="712" status="PASS">
+        <test-method is-config="true" signature="tearDown()" started-at="2018-02-13T12:28:17Z" name="tearDown" finished-at="2018-02-13T12:28:17Z" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Tried to run command without establishing a connection
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T19:05:14.666Z'
+System info: host: 'BSL-BNG-L103', ip: '192.168.10.56', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9480, moz:profile: C:\Users\Akshay.Bokan\AppDa..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: d01d3c27-95b6-46dc-b6b0-83a801d59ecc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T19:05:14.666Z'
+System info: host: 'BSL-BNG-L103', ip: '192.168.10.56', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 9480, moz:profile: C:\Users\Akshay.Bokan\AppDa..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: d01d3c27-95b6-46dc-b6b0-83a801d59ecc
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:497)
+	at com.kem.ddt.Kemlogin.tearDown(Kemlogin.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:525)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:202)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:757)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
+	at org.testng.TestRunner.privateRun(TestRunner.java:749)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
+	at org.testng.TestNG.run(TestNG.java:900)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception>
         </test-method>
-        <test-method signature="launchbrowser(java.lang.String, java.lang.String)" started-at="2018-02-07T15:42:35Z" name="launchbrowser" finished-at="2018-02-07T15:42:49Z" duration-ms="13946" status="PASS">
+        <test-method is-config="true" signature="tearDown()" started-at="2018-02-13T12:28:17Z" name="tearDown" finished-at="2018-02-13T12:28:17Z" duration-ms="0" status="SKIP">
+        </test-method>
+        <test-method signature="launchBrowser(java.lang.String, java.lang.String)" started-at="2018-02-13T12:28:17Z" name="launchBrowser" finished-at="2018-02-13T12:28:17Z" duration-ms="16" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -117,13 +155,11 @@ Session ID: 2a3744e0ca44c7c9a2dfd295df5ede6c
             </param>
           </params>
         </test-method>
-        <test-method is-config="true" signature="tearDown()" started-at="2018-02-07T15:42:49Z" name="tearDown" finished-at="2018-02-07T15:42:50Z" duration-ms="681" status="PASS">
-        </test-method>
-        <test-method signature="launchbrowser(java.lang.String, java.lang.String)" started-at="2018-02-07T15:42:50Z" name="launchbrowser" finished-at="2018-02-07T15:43:02Z" duration-ms="12291" status="FAIL">
+        <test-method signature="launchBrowser(java.lang.String, java.lang.String)" started-at="2018-02-13T12:28:17Z" name="launchBrowser" finished-at="2018-02-13T12:28:17Z" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[kaiser.admiin@gmail.com]]>
+                <![CDATA[kaiser.modeler@gmail.com]]>
               </value>
             </param>
             <param index="1">
@@ -132,74 +168,8 @@ Session ID: 2a3744e0ca44c7c9a2dfd295df5ede6c
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout
-  (Session info: chrome=64.0.3282.140)
-  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T19:05:14.666Z'
-System info: host: 'BSL-BNG-L103', ip: '192.168.10.42', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\AKSHAY~1.BOK\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
-Session ID: b6d85fef1f1bc416a0e825209f64a171]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout
-  (Session info: chrome=64.0.3282.140)
-  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T19:05:14.666Z'
-System info: host: 'BSL-BNG-L103', ip: '192.168.10.42', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\AKSHAY~1.BOK\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
-Session ID: b6d85fef1f1bc416a0e825209f64a171
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at com.kem.ddt.Kemlogin.launchbrowser(Kemlogin.java:29)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
-	at org.testng.TestRunner.privateRun(TestRunner.java:749)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
-	at org.testng.TestNG.run(TestNG.java:900)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception>
         </test-method>
-        <test-method is-config="true" signature="tearDown()" started-at="2018-02-07T15:43:02Z" name="tearDown" finished-at="2018-02-07T15:43:03Z" duration-ms="735" status="PASS">
-        </test-method>
-        <test-method signature="launchbrowser(java.lang.String, java.lang.String)" started-at="2018-02-07T15:43:03Z" name="launchbrowser" finished-at="2018-02-07T15:43:15Z" duration-ms="12415" status="FAIL">
+        <test-method signature="launchBrowser(java.lang.String, java.lang.String)" started-at="2018-02-13T12:28:17Z" name="launchBrowser" finished-at="2018-02-13T12:28:17Z" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -212,74 +182,10 @@ Session ID: b6d85fef1f1bc416a0e825209f64a171
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout
-  (Session info: chrome=64.0.3282.140)
-  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T19:05:14.666Z'
-System info: host: 'BSL-BNG-L103', ip: '192.168.10.42', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\AKSHAY~1.BOK\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
-Session ID: 694ec4ffe1d520e971b6d3ac2e573d11]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout
-  (Session info: chrome=64.0.3282.140)
-  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T19:05:14.666Z'
-System info: host: 'BSL-BNG-L103', ip: '192.168.10.42', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\AKSHAY~1.BOK\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
-Session ID: 694ec4ffe1d520e971b6d3ac2e573d11
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at com.kem.ddt.Kemlogin.launchbrowser(Kemlogin.java:29)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
-	at org.testng.TestRunner.privateRun(TestRunner.java:749)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
-	at org.testng.TestNG.run(TestNG.java:900)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception>
         </test-method>
-        <test-method is-config="true" signature="tearDown()" started-at="2018-02-07T15:43:15Z" name="tearDown" finished-at="2018-02-07T15:43:16Z" duration-ms="695" status="PASS">
+        <test-method is-config="true" signature="tearDown()" started-at="2018-02-13T12:28:17Z" name="tearDown" finished-at="2018-02-13T12:28:17Z" duration-ms="0" status="SKIP">
         </test-method>
-        <test-method signature="launchbrowser(java.lang.String, java.lang.String)" started-at="2018-02-07T15:43:16Z" name="launchbrowser" finished-at="2018-02-07T15:43:28Z" duration-ms="12275" status="FAIL">
+        <test-method signature="launchBrowser(java.lang.String, java.lang.String)" started-at="2018-02-13T12:28:17Z" name="launchBrowser" finished-at="2018-02-13T12:28:17Z" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -292,72 +198,42 @@ Session ID: 694ec4ffe1d520e971b6d3ac2e573d11
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout
-  (Session info: chrome=64.0.3282.140)
-  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T19:05:14.666Z'
-System info: host: 'BSL-BNG-L103', ip: '192.168.10.42', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\AKSHAY~1.BOK\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
-Session ID: c1ea4508f6bccdbec1646cc05a9ec1fc]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout
-  (Session info: chrome=64.0.3282.140)
-  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T19:05:14.666Z'
-System info: host: 'BSL-BNG-L103', ip: '192.168.10.42', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '9.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.35.528161 (5b82f2d2aae0ca..., userDataDir: C:\Users\AKSHAY~1.BOK\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 64.0.3282.140, webStorageEnabled: true}
-Session ID: c1ea4508f6bccdbec1646cc05a9ec1fc
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:325)
-	at com.kem.ddt.Kemlogin.launchbrowser(Kemlogin.java:29)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:846)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1170)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.runWorkers(TestRunner.java:1147)
-	at org.testng.TestRunner.privateRun(TestRunner.java:749)
-	at org.testng.TestRunner.run(TestRunner.java:600)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:317)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:274)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:223)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1039)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:964)
-	at org.testng.TestNG.run(TestNG.java:900)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception>
         </test-method>
-        <test-method is-config="true" signature="tearDown()" started-at="2018-02-07T15:43:28Z" name="tearDown" finished-at="2018-02-07T15:43:29Z" duration-ms="681" status="PASS">
+        <test-method is-config="true" signature="tearDown()" started-at="2018-02-13T12:28:17Z" name="tearDown" finished-at="2018-02-13T12:28:17Z" duration-ms="0" status="SKIP">
+        </test-method>
+        <test-method is-config="true" signature="tearDown()" started-at="2018-02-13T12:28:17Z" name="tearDown" finished-at="2018-02-13T12:28:17Z" duration-ms="0" status="SKIP">
+        </test-method>
+        <test-method signature="launchBrowser(java.lang.String, java.lang.String)" started-at="2018-02-13T12:28:17Z" name="launchBrowser" finished-at="2018-02-13T12:28:17Z" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kaiser.admiin@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password!123]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method is-config="true" signature="tearDown()" started-at="2018-02-13T12:28:17Z" name="tearDown" finished-at="2018-02-13T12:28:17Z" duration-ms="0" status="SKIP">
+        </test-method>
+        <test-method signature="launchBrowser(java.lang.String, java.lang.String)" started-at="2018-02-13T12:28:17Z" name="launchBrowser" finished-at="2018-02-13T12:28:17Z" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aba123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[322aas]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method is-config="true" signature="tearDown()" started-at="2018-02-13T12:28:17Z" name="tearDown" finished-at="2018-02-13T12:28:17Z" duration-ms="0" status="SKIP">
         </test-method>
       </class>
     </test>

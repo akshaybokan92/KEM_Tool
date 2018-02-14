@@ -1,0 +1,9 @@
+ChromeDriver= KEM_Tool/Configuration/chromedriver.exe
+IEDriver=
+
+FirefoxDrive = ./Configuration/geckodriver.exe
+
+URL=http://35.164.157.128
+
+ExcelFilePath=.\\testdata\\Users.xlsx
+Max_Retry_Count = 3

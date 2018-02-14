@@ -1,54 +1,64 @@
 package com.kem.ddt;
 
-import java.lang.System.Logger;
+
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.kem.resource.ConfigReader;
 import com.kem.resource.Kem_LoginPage;
+import com.kem.resource.Kem_LoginPage.login;
+import com.kem.utility.Constant;
 import com.kem.utility.ExcelDataConfig;
+import com.kem.utility.ObjectRepo;
 
-public class Kemlogin {
 
+public class Kemlogin 
+{
+	
 	WebDriver driver;
-
+	Kem_LoginPage klp = new Kem_LoginPage();
+	ConfigReader cr = new ConfigReader(); 
+	
 	@Test(dataProvider="KemLoginData" )
-	public void launchbrowser(String username, String password) throws InterruptedException {
+	public void launchBrowser(String username, String password) throws InterruptedException 
+	
+	{
 		
-		//Driver path
-		System.setProperty("webdriver.chrome.driver","./Configuration/chromedriver.exe");
+System.setProperty("webdriver.gecko.driver","./Configuration/geckodriver.exe");
 		
-		//Launch browser
-		
-		driver = new ChromeDriver();
-		driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
+		//launch browser
+		driver = new FirefoxDriver();
+		//driver = new ChromeDriver();
 		driver.get("http://35.164.157.128/");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(40,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 		
-		//Test case steps
+		//test case steps
+		//Kem_LoginPage.login.txt_username(driver).sendKeys(username);
+			//login.txt_username(driver).sendKeys(username);
 		
-		driver.findElement(By.id("username")).sendKeys(username);
-		driver.findElement(By.id("password")).click();
-		//Kem_LoginPage.login.txt_password(driver).click();
-		driver.findElement(By.id("password")).sendKeys(password);
-		driver.findElement(By.id("login-btn")).click();
-		Thread.sleep(2000);
+		Constant.findElement(ObjectRepo.KEM_loginId_text, driver).sendKeys(username);
+		Kem_LoginPage.login.txt_password(driver).click();
 		
-	
-		
-		// Verification Point
+		Kem_LoginPage.login.txt_password(driver).sendKeys(password);
+		Kem_LoginPage.login.txt_loginBtn(driver).click();
+
+		Thread.sleep(3000);
+		// verification point
 		Assert.assertTrue(driver.getTitle().contains("KEM"), "login failed");
 		System.out.println("Login successful");
 
-
-	}
+			}
+	
+ 
 
 	@AfterMethod
 	public void tearDown() {
@@ -69,8 +79,10 @@ public class Kemlogin {
 			data[i][0]= config.getData(0, i, 0);
 			data[i][1]= config.getData(0, i, 1);
 		}
-		}
-		catch(Exception e) {
+		
+		} catch(Exception e) 
+		
+		{
 			System.out.println(e.getMessage());
 			e.printStackTrace();
 		}

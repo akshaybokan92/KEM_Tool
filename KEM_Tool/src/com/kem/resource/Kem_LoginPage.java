@@ -11,7 +11,7 @@ public class Kem_LoginPage {
 		public static WebElement txt_username (WebDriver driver) 
 		{
 			WebElement element = null;
-			driver.findElement(By.id("username")).sendKeys("");
+			element=driver.findElement(By.id("username"));
 			return element;
 		}
 
@@ -19,19 +19,28 @@ public class Kem_LoginPage {
 		
 		{
 			WebElement element = null;
-			driver.findElement(By.id("password")).sendKeys("");
+			element=driver.findElement(By.id("password"));
 			return element;
 		}
 
 		public static WebElement txt_loginBtn(WebDriver driver)
 		{
 			WebElement element = null;
-			driver.findElement(By.id("login-btn")).click();
+			element = driver.findElement(By.id("login-btn"));
 			return element;
 		}
 	}
 	
 	public static class createRequestProject{
+		
+		public static WebElement txt_RpName(WebDriver driver)
+		
+		{
+			WebElement element = null;
+			element=driver.findElement(By.id("projectName"));
+			return element;
+		}
+		
 		
 		
 		
